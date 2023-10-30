@@ -1,0 +1,28 @@
+site_name: Lucio Salomao
+site_url: https://localhost:8000
+theme:
+   name: material
+   palette:
+     - scheme: default
+       primary: purple
+       toggle:
+         icon: material/weather-night
+         name: Modo noturno
+     - scheme: slate
+       primary: deep purple
+       toggle:
+         icon: material/weather-sunny
+         name: Modo claro
+markdown_extensions:
+    - pymdownx.highlight
+    - pymdownx.superfences:
+        custom_fences:
+            - name: mermaid
+              class: mermaid
+              format: !!python/name:mermaid2.fence_mermaid_custom
+plugins:
+    - search
+    - mermaid2    
+nav:
+    - Home: index.md
+    - Sobre: abount.md
